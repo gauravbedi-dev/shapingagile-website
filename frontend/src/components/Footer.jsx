@@ -23,9 +23,7 @@ export default function Footer() {
             Contact Us
           </a>
         </div>
-        <p className="text-gray-400">
-          Shaping Agile Works Pvt Ltd | contact@shapingagile.com
-        </p>
+        <p className="text-gray-400">contact@shapingagile.com</p>
         <p className="text-gray-400">
           © {new Date().getFullYear()} Shaping Agile. All rights reserved.
         </p>

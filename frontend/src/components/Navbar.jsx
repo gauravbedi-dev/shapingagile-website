@@ -15,7 +15,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="inline-flex items-center"
           >
-            <img alt="Logo" src={logo} className="h-14 w-auto" />
+            <img alt="Logo" src={logo} className="h-12 w-auto" />
           </NavLink>
         </div>
 

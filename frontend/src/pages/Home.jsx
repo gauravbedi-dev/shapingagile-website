@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import team1 from "../assets/images/team2.jpg";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -43,16 +44,15 @@ export default function Home() {
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Shaping Agile</h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-6">
-            Shaping Agile is more than a tool — it’s a movement to reimagine how
-            teams build products. We bring clarity, speed and accountability to
-            every stage of product delivery by merging Agile principles with
-            practical, real-world workflows.
+            Shaping Agile is a new-age company to reimagine how teams build
+            products using Agile Methodologies. Agility is not just about doing
+            Scrum, it's about shaping a culture of continuous improvement,
+            innovation, and ownership.
           </p>
 
           <p className="text-md md:text-lg max-w-2xl mx-auto mb-8">
-            Built for startups, product teams, and enterprises who believe that
-            agility is not just about doing Scrum — it's about shaping a culture
-            of continuous improvement, innovation, and ownership.
+            We are developing a modern Agile Project Management tool built for
+            startups, product teams, and enterprises.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -75,29 +75,38 @@ export default function Home() {
       {/* Why We Exist Section */}
       <div class="px-4 sm:px-6 lg:px-8">
         <section className="py-16 bg-white">
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-4">Why We Exist</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-6">
-              Most Agile tools today are complex, rigid or disconnected from
-              real team dynamics. Teams spend more time managing tools than
-              delivering value. We exist to change that.
-            </p>
+          <div className="container mx-auto grid gap-8 justify-center  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-4">
+            <div className="flex items-center justify-center lg:justify-end h-full">
+              <img
+                alt="Team"
+                src={team1}
+                className="h-40 sm:h-64 md:h-80 lg:h-80 w-auto"
+              />
+            </div>
+            <div className="container mx-auto text-center">
+              <h2 className="text-3xl font-semibold mb-4">Why We Exist</h2>
+              <p className="text-gray-600 max-w-3xl mx-auto mb-6">
+                Most Agile tools today are complex, rigid or disconnected from
+                real team dynamics. Teams spend more time managing tools than
+                delivering value. We exist to change that.
+              </p>
 
-            <ul className="text-gray-700 max-w-2xl mx-auto mb-6 space-y-2 text-left md:text-center">
-              <li>✔ To simplify Agile — without diluting its power</li>
-              <li>✔ To help teams focus on outcomes, not just activities</li>
-              <li>
-                ✔ To bridge the gap between leadership vision and execution
-              </li>
-              <li>
-                ✔ To make agility intuitive, human-centered and measurable
-              </li>
-            </ul>
+              <ul className="text-gray-700 max-w-2xl mx-auto mb-6 space-y-2 text-left md:text-center">
+                <li>✔ To simplify Agile — without diluting its power</li>
+                <li>✔ To help teams focus on outcomes, not just activities</li>
+                <li>
+                  ✔ To bridge the gap between leadership vision and execution
+                </li>
+                <li>
+                  ✔ To make agility intuitive, human-centered and measurable
+                </li>
+              </ul>
 
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We believe that when teams are empowered with clarity and purpose
-              — great products get built, faster and happier.
-            </p>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                We believe that when teams are empowered with clarity and
+                purpose — great products get built, faster and happier.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -108,8 +117,8 @@ export default function Home() {
               Agile Project Management Tool
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-              We are building a modern Agile Project Management tool to empower
-              teams, enhance transparency, and streamline delivery. Stay tuned!
+              Stay tuned to know the latest developments about our Agile Project
+              Management tool!
             </p>
             <form
               onSubmit={handleSubmit}

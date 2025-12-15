@@ -1,4 +1,7 @@
 import React from "react";
+import simplify from "../assets/images/simplify_agile.jpg";
+import empower from "../assets/images/empower_teams.jpg";
+import foster_learning from "../assets/images/foster_learning.jpg";
 
 export default function Vision() {
   return (
@@ -27,9 +30,16 @@ export default function Vision() {
               Agile transformation — connecting strategy with execution, and
               turning collaboration into measurable success.
             </p>
+            <div className="container mx-auto grid gap-8 justify-center  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-4 mb-6">
+              <div className="flex items-center justify-center lg:justify-end h-full">
+                <img
+                  alt="Empower Teams"
+                  src={empower}
+                  className="h-40 sm:h-64 md:h-64 lg:h-56 w-auto"
+                />
+              </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mt-8">
-              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center w-full max-w-md mx-auto lg:mx-0">
                 <h3 className="font-semibold text-xl mb-2 text-blue-600">
                   Empower Teams
                 </h3>
@@ -37,7 +47,16 @@ export default function Vision() {
                   Enable teams to work with autonomy, trust, and shared purpose.
                 </p>
               </div>
-              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
+            </div>
+            <div className="container mx-auto grid gap-8 justify-center  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-4 mb-6">
+              <div className="flex items-center justify-center lg:justify-end h-full">
+                <img
+                  alt="Simplify Agile"
+                  src={simplify}
+                  className="h-40 sm:h-64 md:h-64 lg:h-56 w-auto"
+                />
+              </div>
+              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center w-full max-w-md mx-auto lg:mx-0">
                 <h3 className="font-semibold text-xl mb-2 text-blue-600">
                   Simplify Agile
                 </h3>
@@ -46,7 +65,17 @@ export default function Vision() {
                   for everyone.
                 </p>
               </div>
-              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
+            </div>
+            <div className="container mx-auto grid gap-8 justify-center  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-4 mb-6">
+              <div className="flex items-center justify-center lg:justify-end h-full">
+                <img
+                  alt="Foster Learning"
+                  src={foster_learning}
+                  className="h-40 sm:h-64 md:h-64 lg:h-56 w-auto"
+                />
+              </div>
+
+              <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center w-full max-w-md mx-auto lg:mx-0">
                 <h3 className="font-semibold text-xl mb-2 text-blue-600">
                   Foster Learning
                 </h3>

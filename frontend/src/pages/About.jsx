@@ -31,7 +31,7 @@ export default function About() {
           <div className="container mx-auto grid gap-8 justify-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 px-4 max-w-sm">
             {/* Founder Placeholder */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#1f3a6d,_#0d1a3a)] flex items-center justify-center overflow-hidden shadow-xl">
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
                 <img
                   alt="Profile"
                   src={gauravimg}
