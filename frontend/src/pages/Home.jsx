@@ -84,7 +84,9 @@ export default function Home() {
               />
             </div>
             <div className="container mx-auto text-center">
-              <h2 className="text-3xl font-semibold mb-4">Why We Exist</h2>
+              <h2 className="text-3xl font-semibold mb-4 text-blue-600">
+                Why We Exist
+              </h2>
               <p className="text-gray-600 max-w-3xl mx-auto mb-6">
                 Most Agile tools today are complex, rigid or disconnected from
                 real team dynamics. Teams spend more time managing tools than
@@ -113,7 +115,7 @@ export default function Home() {
         {/* Coming Soon Section */}
         <section className="py-16 bg-gray-50" id="coming-soon">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-blue-600">
               Agile Project Management Tool
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">

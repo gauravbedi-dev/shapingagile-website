@@ -1,5 +1,7 @@
 import React from "react";
 import gauravimg from "../assets/images/gaurav.png";
+import kavyaimg from "../assets/images/kavya.png";
+import aishwaryaimg from "../assets/images/aishwarya.png";
 import LIimg from "../assets/images/linkedin_icon.png";
 
 export default function About() {
@@ -28,9 +30,9 @@ export default function About() {
             </p>
           </div>
           {/* <div className="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4"> */}
-          <div className="container mx-auto grid gap-8 justify-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 px-4 max-w-sm">
+          <div className="container mx-auto grid gap-6 justify-center grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 max-w-6xl">
             {/* Founder Placeholder */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-2 max-w-sm mx-auto">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
                 <img
                   alt="Profile"
@@ -48,6 +50,7 @@ export default function About() {
                   <a
                     href="https://www.linkedin.com/in/gauravbedi"
                     alt="LinkedIn Profile"
+                    title="LinkedIn Profile"
                     target="_new"
                   >
                     <img
@@ -60,7 +63,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-gray-600 mb-2">Founder & Agile Evangelist</p>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-sm text-justify">
                 Driving Shaping Agile's mission to empower teams and
                 organizations with modern tools and Agile practices.
                 <br />
@@ -72,24 +75,97 @@ export default function About() {
             </div>
 
             {/* Future Team Members Placeholder */}
-            {/* <div
-          className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-        >
-          <div
-            className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#1f3a6d,_#0d1a3a)] flex items-center justify-center overflow-hidden shadow-xl"
-          >
-            <img
-              alt="Profile"
-              src=""
-              height="50"
-              width="100"
-              className="object-cover"
-            / />
-          </div>
-          <h3 className="text-xl font-semibold mb-2">Name</h3>
-          <p className="text-gray-600 mb-2">Role</p>
-          <p className="text-gray-500 text-sm">Description</p>
-        </div> */}
+            <div className="grid-cols-1 sm:grid-cols-1 md:col-span-2 lg:grid-cols-2 flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:col-span-2 lg:grid-cols-2 gap-4">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition  max-w-sm w-full mx-auto">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
+                    <img
+                      alt="Profile"
+                      src={kavyaimg}
+                      height="50"
+                      width="100"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                    <div className="flex items-center justify-left h-full">
+                      <h3 className="text-xl font-semibold">Kavya G Rao</h3>
+                    </div>
+                    <div className="flex items-center justify-left h-full">
+                      <a
+                        href="https://www.linkedin.com/in/kavya-g-87034985"
+                        alt="LinkedIn Profile"
+                        title="LinkedIn Profile"
+                        target="_new"
+                      >
+                        <img
+                          alt="LinkedIn Profile"
+                          src={LIimg}
+                          height="16"
+                          width="16"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-2">HR Specialist</p>
+                  <p className="text-gray-500 text-sm text-justify">
+                    Building a positive workplace culture and aligning people's
+                    practices with business objectives.
+                    <br />
+                    <br />
+                    HR professional with experience across recruitment, HR
+                    generalist functions, and HR business partnering. She brings
+                    strong expertise in talent management, employee engagement,
+                    and strategic HR initiatives.
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
+                    <img
+                      alt="Profile"
+                      src={aishwaryaimg}
+                      height="50"
+                      width="100"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                    <div className="flex items-center justify-left h-full gap-4">
+                      <h3 className="text-xl font-semibold">
+                        Aishwarya S Rajkondawar
+                      </h3>
+                      &nbsp;&nbsp;&nbsp;
+                      <a
+                        href="https://www.linkedin.com/in/aishwarya-rajkondawar-99a30a3a1"
+                        alt="LinkedIn Profile"
+                        title="LinkedIn Profile"
+                        target="_new"
+                      >
+                        <img
+                          alt="LinkedIn Profile"
+                          src={LIimg}
+                          height="16"
+                          width="16"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-2">
+                    Java Springboot Technologist
+                  </p>
+                  <p className="text-gray-500 text-sm text-justify">
+                    Consistently delivering high-quality backend solutions while
+                    working effectively in agile, collaborative environments.
+                    <br />
+                    <br />
+                    Developer with expertise in Java, Spring Boot, and
+                    micro-services architecture, with experience in building
+                    RESTful APIs, implementing complex business logic, and
+                    integrating relational databases.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
