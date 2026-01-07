@@ -2,13 +2,14 @@ import React from "react";
 import gauravimg from "../assets/images/gaurav.png";
 import kavyaimg from "../assets/images/kavya.png";
 import aishwaryaimg from "../assets/images/aishwarya.png";
+import harshithaimg from "../assets/images/harshitha.png";
 import LIimg from "../assets/images/linkedin_icon.png";
 
 export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-20 text-center">
+      <section className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-16 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
@@ -30,9 +31,10 @@ export default function About() {
             </p>
           </div>
           {/* <div className="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4"> */}
-          <div className="container mx-auto grid gap-6 justify-center grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 max-w-6xl">
+          <div className="container mx-auto grid gap-4 justify-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 px-4 max-w-6xl">
             {/* Founder Placeholder */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-2 max-w-sm mx-auto">
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 max-w-sm mx-auto">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
                 <img
                   alt="Profile"
@@ -75,9 +77,9 @@ export default function About() {
             </div>
 
             {/* Future Team Members Placeholder */}
-            <div className="grid-cols-1 sm:grid-cols-1 md:col-span-2 lg:grid-cols-2 flex justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-1 md:col-span-2 lg:grid-cols-2 gap-4">
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition  max-w-sm w-full mx-auto">
+            <div className="grid-cols-1 sm:grid-cols-1 md:col-span-3 lg:grid-cols-3 flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:col-span-3 lg:grid-cols-3 gap-4">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm sm:max-w-sm md:max-w-sm lg:max-w-sm w-full mx-auto">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
                     <img
                       alt="Profile"
@@ -162,6 +164,52 @@ export default function About() {
                     micro-services architecture, with experience in building
                     RESTful APIs, implementing complex business logic, and
                     integrating relational databases.
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm sm:max-w-sm md:max-w-sm lg:max-w-sm w-full mx-auto">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
+                    <img
+                      alt="Profile"
+                      src={harshithaimg}
+                      height="50"
+                      width="100"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                    <div className="flex items-center justify-left h-full">
+                      <h3 className="text-xl font-semibold">Harshitha S</h3>
+                    </div>
+                    <div className="flex items-center justify-left h-full">
+                      <a
+                        href="https://www.linkedin.com/in/harshitha-s-7157811b1/"
+                        alt="LinkedIn Profile"
+                        title="LinkedIn Profile"
+                        target="_new"
+                      >
+                        <img
+                          alt="LinkedIn Profile"
+                          src={LIimg}
+                          height="16"
+                          width="16"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-2">
+                    React Native & React.js Technologist
+                  </p>
+                  <p className="text-gray-500 text-sm text-justify">
+                    Building scalable and high-quality front-end applications
+                    while contributing to the development of robust and
+                    user-centric solutions.
+                    <br />
+                    <br />
+                    Developer with expertise in React Native and React.js
+                    technologies, with experience in complex mobile & web
+                    applications project delivery. She is a creative person at
+                    heart with keen interest in sketching, adventure activities
+                    and television series.
                   </p>
                 </div>
               </div>

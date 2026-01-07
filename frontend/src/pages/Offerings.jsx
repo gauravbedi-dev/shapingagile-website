@@ -40,26 +40,34 @@ export default function Offerings() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Offerings</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
-            Purpose-built solutions and knowledge to help teams plan better,
-            collaborate clearly, and deliver with confidence.
+            A purpose-built solution to help teams plan better, collaborate
+            clearly, and deliver with confidence.
           </p>
         </div>
       </section>
 
       {/* Agile Project Management Tool */}
-      <section className="py-20 bg-white">
+      <section className="pt-16 pb-1 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-semibold text-blue-600 mb-4">
               Agile Project Management Tool
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
+          </div>
+        </div>
+      </section>
+      <section className="py-2 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-xl font-semibold text-blue-600 mb-3">
+              Product Focus Areas
+            </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               A focused, outcome-driven planning system designed to reduce
               noise, improve alignment, and help teams and leaders rely on facts
               — not fragmented conversations.
             </p>
           </div>
-
           {/* Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <FeatureCard
@@ -83,95 +91,107 @@ export default function Offerings() {
               description="Clear, aggregated views of progress and risks without micromanagement — designed to evolve with feedback from early adopters."
             />
           </div>
-
-          {/* Email Capture */}
-          <div className="max-w-xl mx-auto text-center">
-            <p className="text-gray-600 mb-6">
-              We're building this tool incrementally with real teams. Join early
-              to shape what comes next.
-            </p>
-
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="px-4 py-2 border border-gray-300 rounded-lg flex-1 focus:outline-none focus:ring-2 focus:ring-blue-600"
-              />
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
-              >
-                Stay Updated
-              </button>
-            </form>
-
-            {status && (
-              <p className="text-sm mt-4 text-gray-700 font-medium">{status}</p>
-            )}
-          </div>
         </div>
       </section>
+      <section className="py-10 bg-gray-50">
+        {/* Future Roadmap Section */}
+        <div className="text-center mb-12 px-4">
+          <h3 className="text-xl font-semibold text-blue-600 mb-3">
+            Product Evolution Roadmap
+          </h3>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            A thoughtful, outcome-led evolution — shaped by real usage and early
+            adopters, not assumptions.
+          </p>
+        </div>
 
-      {/* Agile Knowledge Hub */}
-      <section className="py-20 bg-gray-50" id="agile-topics">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold mb-4 text-blue-600">
-              Agile Knowledge Hub
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Practical insights on Agile thinking, frameworks, and continuous
-              improvement — grounded in real-world application.
-            </p>
+        {/* Timeline */}
+        <div className="relative max-w-5xl mx-auto px-4">
+          {/* Horizontal line (desktop) */}
+          <div className="hidden md:block absolute top-6 left-0 right-0 h-0.5 bg-blue-100" />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Phase 1 */}
+            <div className="relative text-center md:text-left">
+              <div className="mx-auto md:mx-0 w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold mb-4">
+                1
+              </div>
+              <h4 className="font-semibold text-lg mb-2 text-gray-800">
+                Focused Planning Core
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Outcome-driven planning with clean goal-to-work mapping, helping
+                teams align on what truly matters.
+              </p>
+            </div>
+
+            {/* Phase 2 */}
+            <div className="relative text-center md:text-left">
+              <div className="mx-auto md:mx-0 w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold mb-4">
+                2
+              </div>
+              <h4 className="font-semibold text-lg mb-2 text-gray-800">
+                Collaboration & Alignment
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Shared context, goal-linked discussions, and dependency
+                awareness — reducing ambiguity and misalignment.
+              </p>
+            </div>
+
+            {/* Phase 3 */}
+            <div className="relative text-center md:text-left">
+              <div className="mx-auto md:mx-0 w-12 h-12 rounded-full bg-blue-400 text-white flex items-center justify-center font-semibold mb-4">
+                3
+              </div>
+              <h4 className="font-semibold text-lg mb-2 text-gray-800">
+                Leadership & Portfolio Signals
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Clear, meaningful signals for leaders — enabling oversight and
+                confidence without micromanagement.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
-            <KnowledgeCard
-              title="Agile Fundamentals"
-              items={[
-                "Agile Manifesto & principles",
-                "Iterative delivery & adaptive planning",
-                "Benefits for teams and organizations",
-              ]}
-              link="/agile-fundamentals"
-            />
+        {/* Disclaimer */}
+        <p className="mt-10 text-center text-xs text-gray-500">
+          This roadmap is indicative and will evolve based on pilot customers
+          and early adopters.
+        </p>
+      </section>
+      <section className="py-10 bg-white">
+        {/* Email Capture */}
+        <div className="max-w-xl mx-auto text-center border border-white sm:border-white md:border-blue-200 lg:border-blue-200 mb-4 p-6 rounded-lg md:bg-blue-50 lg:bg-blue-50">
+          <p className="text-gray-600 mb-6">
+            We're building this tool incrementally with real teams. Join early
+            to shape what comes next.
+          </p>
 
-            <KnowledgeCard
-              title="Scrum & Kanban Deep Dive"
-              items={[
-                "Scrum roles & events",
-                "Kanban flow optimization",
-                "Choosing the right framework",
-              ]}
-              link="/scrum-kanban"
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row gap-4"
+          >
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="px-4 py-2 border border-gray-300 rounded-lg flex-1 focus:outline-none focus:ring-2 focus:ring-blue-600"
             />
+            <button
+              type="submit"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+            >
+              Stay Updated
+            </button>
+          </form>
 
-            <KnowledgeCard
-              title="Agile Values & Principles"
-              items={[
-                "Four Agile values",
-                "Twelve guiding principles",
-                "Applying values in daily work",
-              ]}
-              link="/agile-values-principles"
-            />
-
-            <KnowledgeCard
-              title="CI/CD & Continuous Improvement"
-              items={[
-                "CI/CD pipelines",
-                "Feedback loops",
-                "Retrospectives & Kaizen",
-              ]}
-              link="/ci-cd"
-            />
-          </div>
+          {status && (
+            <p className="text-sm mt-4 text-gray-700 font-medium">{status}</p>
+          )}
         </div>
       </section>
     </>

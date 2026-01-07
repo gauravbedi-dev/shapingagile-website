@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-20 text-center">
+      <section className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-16 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
