@@ -3,6 +3,7 @@ import gauravimg from "../assets/images/gaurav.png";
 import kavyaimg from "../assets/images/kavya.png";
 import aishwaryaimg from "../assets/images/aishwarya.png";
 import harshithaimg from "../assets/images/harshitha.png";
+import tejasimg from "../assets/images/tejas.png";
 import LIimg from "../assets/images/linkedin_icon.png";
 
 export default function About() {
@@ -213,6 +214,49 @@ export default function About() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 max-w-sm mx-auto">
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
+                <img
+                  alt="Profile"
+                  src={tejasimg}
+                  height="50"
+                  width="100"
+                  className="object-cover"
+                />
+              </div>
+              <div className="container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                <div className="flex items-center justify-left h-full">
+                  <h3 className="text-xl font-semibold">Tejas DM</h3>
+                </div>
+                <div className="flex items-center justify-left h-full">
+                  <a
+                    href="https://www.linkedin.com/in/tejas-dm-1b0418198/"
+                    alt="LinkedIn Profile"
+                    title="LinkedIn Profile"
+                    target="_new"
+                  >
+                    <img
+                      alt="LinkedIn Profile"
+                      src={LIimg}
+                      height="16"
+                      width="16"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-2">Quality Specialist</p>
+              <p className="text-gray-500 text-sm text-justify">
+                Delivering high quality and robust enterprise systems while
+                ensuring compliance to Product Engineering principles.
+                <br />
+                <br />
+                Testing professional with expertise in functional testing,
+                mobile automation using Appium and WebdriverIO, API automation,
+                and Selenium. He enjoys playing badminton and cricket and is
+                passionate about traveling and exploring new places.
+              </p>
             </div>
           </div>
         </section>

@@ -40,8 +40,8 @@ export default function Offerings() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Offerings</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
-            A purpose-built solution to help teams plan better, collaborate
-            clearly, and deliver with confidence.
+            A purpose-built Agile Project Management Solution to help teams plan
+            better, collaborate clearly, and deliver with confidence.
           </p>
         </div>
       </section>
