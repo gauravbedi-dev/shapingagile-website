@@ -14,7 +14,7 @@ export default function Footer() {
             href="/offerings"
             className="hover:text-cyan-400 inline-block px-1"
           >
-            Offerings
+            Product
           </a>
           <a href="/about" className="hover:text-cyan-400 inline-block px-1">
             About Us

@@ -33,7 +33,7 @@ export default function Navbar() {
               to="/offerings"
               className="text-gray-700 hover:text-blue-600"
             >
-              Offerings
+              Product
             </NavLink>
             <NavLink to="/about" className="text-gray-700 hover:text-blue-600">
               About

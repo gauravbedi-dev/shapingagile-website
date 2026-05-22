@@ -7,7 +7,7 @@ export default function Vision() {
   return (
     <>
       {/* Vision Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 text-white py-20">
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Vision</h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto">

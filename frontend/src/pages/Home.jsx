@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import team1 from "../assets/images/team2.jpg";
+import appconfig from "../configs/config";
+import productLogo from "../assets/images/works/Works_logo_title_landscape.svg";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -38,35 +40,63 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section
-        className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-20"
+        className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 text-white py-24"
         id="home"
       >
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Shaping Agile</h1>
+          {/* Launch Badge */}
+          <div className="mb-4">
+            <span className="bg-white text-blue-700 px-4 py-1 rounded-full text-sm font-semibold shadow">
+              🚀 Now Introducing
+            </span>
+          </div>
+
+          {/* Product Logo Placeholder */}
+          <div className="flex justify-center mb-6">
+            <div className="bg-white px-8 py-4 rounded-2xl shadow-xl transform transition duration-300 hover:scale-110">
+              <img
+                src={productLogo}
+                alt="Shaping Agile Works"
+                className="h-16 md:h-20 object-contain transition duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            The Agile Platform Built for How Teams Actually Work
+          </h1>
+
+          {/* Subtext */}
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-6">
-            Shaping Agile is a new-age company to reimagine how teams build
-            products using Agile Methodologies. Agility is not just about doing
-            Scrum, it's about shaping a culture of continuous improvement,
-            innovation, and ownership.
+            Shaping Agile Works is a modern Agile Project Management platform
+            designed to simplify execution, align teams, and bring real
+            visibility to outcomes — without the complexity of traditional
+            tools.
           </p>
 
-          <p className="text-md md:text-lg max-w-2xl mx-auto mb-8">
-            We are developing a modern Agile Project Management tool built for
-            startups, product teams, and enterprises.
+          {/* Value Proposition */}
+          <p className="text-md md:text-lg max-w-2xl mx-auto mb-10 text-blue-100">
+            Move beyond rigid workflows. Shape your processes, empower your
+            teams, and deliver faster with clarity and control.
           </p>
 
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
+              href={appconfig.WORKS_PRODUCT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-blue-700 px-8 py-3 font-semibold rounded-lg shadow-md hover:bg-gray-100"
+            >
+              Explore Product
+            </a>
+
+            <a
               href="/vision"
-              className="bg-white text-blue-600 px-6 py-3 font-medium rounded-lg shadow-md hover:bg-gray-100 inline-flex text-center whitespace-nowrap"
+              className="border border-white px-8 py-3 font-semibold rounded-lg hover:bg-white hover:text-blue-700"
             >
               Our Vision
-            </a>
-            <a
-              href="#coming-soon"
-              className="bg-white text-blue-600 px-6 py-3 font-medium rounded-lg shadow-md hover:bg-gray-100 inline-flex text-center whitespace-nowrap"
-            >
-              Agile Tool Coming Soon
             </a>
           </div>
         </div>
@@ -116,11 +146,11 @@ export default function Home() {
         <section className="py-16 bg-gray-50" id="coming-soon">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-4 text-blue-600">
-              Agile Project Management Tool
+              Agile Project Management Platform
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
               Stay tuned to know the latest developments about our Agile Project
-              Management tool!
+              Management Platform!
             </p>
             <form
               onSubmit={handleSubmit}
