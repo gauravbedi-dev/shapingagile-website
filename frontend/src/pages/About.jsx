@@ -285,7 +285,7 @@ export default function About() {
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold">Divi Datta Preethi</h3>
                 <a
-                  href="https://www.linkedin.com/in/"
+                  href="https://www.linkedin.com/in/dattapreethi-divi-81a050219/"
                   title="LinkedIn Profile"
                   target="_blank"
                   rel="noreferrer"
