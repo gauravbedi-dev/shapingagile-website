@@ -4,7 +4,7 @@ import kavyaimg from "../assets/images/kavya.png";
 import aishwaryaimg from "../assets/images/aishwarya.png";
 import harshithaimg from "../assets/images/harshitha.png";
 import tejasimg from "../assets/images/tejas.png";
-import ayushimg from "../assets/images/ayush.png";
+import shubhamimg from "../assets/images/shubham.png";
 import preethiimg from "../assets/images/preethi.png";
 
 import LIimg from "../assets/images/linkedin_icon.png";
@@ -112,21 +112,19 @@ export default function About() {
               </p>
             </div>
 
-            {/** Card: Aishwarya */}
+            {/** Card: Shubham */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
                 <img
                   alt="Profile"
-                  src={aishwaryaimg}
+                  src={shubhamimg}
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold">
-                  Aishwarya S Rajkondawar
-                </h3>
+                <h3 className="text-xl font-semibold">Shubham Kumar</h3>
                 <a
-                  href="https://www.linkedin.com/in/aishwarya-rajkondawar-99a30a3a1"
+                  href="https://www.linkedin.com/in/shubham-kumar-a71a57a6/"
                   title="LinkedIn Profile"
                   target="_blank"
                   rel="noreferrer"
@@ -139,16 +137,16 @@ export default function About() {
                   />
                 </a>
               </div>
-              <p className="text-gray-600 mb-2">Java Springboot Technologist</p>
+              <p className="text-gray-600 mb-2">GTM Specialist</p>
               <p className="text-gray-500 text-sm text-justify">
-                Consistently delivering high-quality backend solutions while
-                working effectively in agile, collaborative environments.
+                Leading GTM initiatives that drive customer acquisition, revenue
+                growth, and market expansion, while building scalable
+                foundations for sustainable business success.
                 <br />
                 <br />
-                Developer with expertise in Java, Spring Boot, and
-                micro-services architecture, with experience in building RESTful
-                APIs, implementing complex business logic, and integrating
-                relational databases.
+                Experienced in B2B SaaS, enterprise sales, and strategic growth,
+                with a passion for building revenue-driven growth engines and
+                helping businesses scale from 0 to 1 and beyond.
               </p>
             </div>
 
@@ -232,47 +230,6 @@ export default function About() {
               </p>
             </div>
 
-            {/** Card: Ayush */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
-                <img
-                  alt="Profile"
-                  src={ayushimg}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold">Ayush Jain</h3>
-                <a
-                  href="https://www.linkedin.com/in/thealanjain"
-                  title="LinkedIn Profile"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    alt="LinkedIn Profile"
-                    src={LIimg}
-                    height="16"
-                    width="16"
-                  />
-                </a>
-              </div>
-              <p className="text-gray-600 mb-2">Frontend & 3D Web Specialist</p>
-              <p className="text-gray-500 text-sm text-justify">
-                Building performant, accessible, and visually immersive web
-                experiences in React.js, TypeScript, and modern frontend
-                architecture.
-                <br />
-                <br />
-                Frontend developer who brings a strong product mindset to every
-                engagement, crafting UI solutions that are fast, inclusive, and
-                built to scale across diverse domains. He is specialized in 3D
-                web development using Three.js and React Three Fiber, bringing
-                real-time product customization and interactive 3D environments
-                to life in the browser.
-              </p>
-            </div>
-
             {/** Card: Preethi */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
@@ -285,7 +242,7 @@ export default function About() {
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold">Divi Datta Preethi</h3>
                 <a
-                  href="https://www.linkedin.com/in/dattapreethi-divi-81a050219/"
+                  href="https://www.linkedin.com/in/dattapreethi-divi-81a050219"
                   title="LinkedIn Profile"
                   target="_blank"
                   rel="noreferrer"
