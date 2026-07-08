@@ -16,7 +16,7 @@ import picture2 from "../assets/images/works/boards_picture.png";
 
 const futureItems = [
   {
-    title: "Test Management",
+    title: "Test Management (Newly Launched)",
     icon: Bug,
   },
   {

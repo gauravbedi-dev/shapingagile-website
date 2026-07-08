@@ -112,44 +112,6 @@ export default function About() {
               </p>
             </div>
 
-            {/** Card: Shubham */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
-                <img
-                  alt="Profile"
-                  src={shubhamimg}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold">Shubham Kumar</h3>
-                <a
-                  href="https://www.linkedin.com/in/shubham-kumar-a71a57a6/"
-                  title="LinkedIn Profile"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    alt="LinkedIn Profile"
-                    src={LIimg}
-                    height="16"
-                    width="16"
-                  />
-                </a>
-              </div>
-              <p className="text-gray-600 mb-2">GTM Specialist</p>
-              <p className="text-gray-500 text-sm text-justify">
-                Leading GTM initiatives that drive customer acquisition, revenue
-                growth, and market expansion, while building scalable
-                foundations for sustainable business success.
-                <br />
-                <br />
-                Experienced in B2B SaaS, enterprise sales, and strategic growth,
-                with a passion for building revenue-driven growth engines and
-                helping businesses scale from 0 to 1 and beyond.
-              </p>
-            </div>
-
             {/** Card: Harshitha */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-sm w-full mx-auto">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[radial-gradient(circle_at_center,_#4c6cb3,_#1f2f5a)] flex items-center justify-center overflow-hidden shadow-xl">
